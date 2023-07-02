@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Merry Christmas</title>
+  <link rel="stylesheet" href="css/default.css">
+  <style>
+    html{}
+  body{height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+  .wrap{width: 900px;height: 900px;
+    background-color: rgb(5, 56, 31);
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;}
+  .botm{position: absolute; left: 0; bottom: 0;
+    width: 100%;}
+  </style>
+</head>
+<body>
+  <!-- bg -->
+  <div class="wrap">
+    <img src="img/bg.svg" alt="bg">
+    <img src="img/bottom.svg" alt="bottom" class="botm">
+  <!-- txt -->
+  <style>
+      .txtWrap{position: absolute; top: 100px;left: 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        animation: txt 2s 2s alternate linear forwards;
+        color: rgb(218, 218, 218)}
+      @keyframes txt{
+        from{top: 150px;left: 0; opacity: 0;}
+        30%{opacity: 0;}
+        to{top: 100px;left: 0; opacity: 1;}
+      }
+    .txtWrap h1{font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    line-height: 65px;}
+    .txtWrap p{font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;}
+    .imgWrap{width: 100px;
+    position: absolute; top: -13%; right: 15%;}
+  </style>
+  <div class="txtWrap">
+    <h1>Merry Christmas <br>&<br> Happy New Year</h1>
+    <p>행복한 연말 되시고 새해 복 많이 받으세요.<br>-이영 드림-</p>
+    <div class="imgWrap">
+      <img src="img/deco.svg" alt="deco">
+    </div>
+  </div>
+  <style>
+    audio{opacity: 0.9;
+    position: absolute; top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;}
+  </style>
+  <audio loop controls autoplay>
+    <source src="img/we-wish-you-a-merry-christmas-126685.mp3">
+  </audio>
+    <!-- santa -->
+    <style>
+      .santaWrap{width: 250px; height: 350px;
+        position: absolute; bottom: 0; left: 50%;
+        transform: translate(-50%);}
+        .santaWrap img{position: absolute;}
+      .hat{width: 100px; left: 70px; top: -5px;
+        animation: hatMov 1s infinite alternate linear}
+      @keyframes hatMov{
+        from{left: 70px; top: -10px;}
+        to{left: 70px; top: -5px;}
+      }
+      .arm{width: 100px; left: -30px; top: 80px;
+        animation: armMov 1s infinite alternate linear}
+        @keyframes armMov{
+        from{transform: rotate(0deg); transform-origin: right bottom;}
+        to{transform: rotate(20deg); transform-origin: right bottom;}
+        }
+      .giftpkg{width: 250px; top: 10px; left: 60px;
+        animation: giftMov 1s infinite alternate linear}
+        @keyframes giftMov{
+          from{top: 10px; left: 30px;}
+          to{top: 10px; left: 70px;}
+        }
+      
+    </style>
+    <div class="santaWrap">
+      <img src="img/snata_giftpackage.svg" alt="giftpackage" class="giftpkg">
+      <img src="img/snata_arm.svg" alt="arm" class="arm">
+      <img src="img/snata_body.svg" alt="body" class="body">
+      <img src="img/snata_hat.svg" alt="hat" class="hat">    
+    </div>
+    <!-- Rudolf -->
+    <style>
+    .rudolfWrap img:nth-of-type(1){width: 180px;
+        position: absolute; bottom: 10%; left: 65%;}
+    .rudolfWrap img:nth-of-type(2){width: 120px;
+        position: absolute; bottom: 10%; left: 75%;
+        animation: rudolf 1s infinite alternate}
+      @keyframes rudolf{
+        from{bottom: 10%; left: 75%;}
+        to{bottom: 13%; left: 75%;}
+      }
+    </style>
+    <div class="rudolfWrap">
+      <img src="img/Rudolf_mom.svg" alt="Rudolf">
+      <img src="img/Rudolf_mom.svg" alt="Rudolf">
+    </div>
+    <!-- snowman -->
+    <style>
+      .snowman .snowbody{width: 180px;
+        position: absolute; bottom: 10%; left: 15%;}
+      .snowman .snowarm{width: 50px;
+        position: absolute; bottom: 22%; left: 13%;
+        animation: snowMov 1s infinite alternate linear}
+
+        @keyframes snowMov{
+          from{transform: rotate(0deg); transform-origin: right bottom;}
+          to{transform: rotate(20deg); transform-origin: right bottom;}
+        }
+    </style>
+    <div class="snowman">
+      <img src="img/snowman_body.svg" alt="snowman"  class="snowbody">
+      <img src="img/snowman_arm_left.svg" alt="snowarm" class="snowarm">
+    </div>
+  </div>
+</body>
+</html>
